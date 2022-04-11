@@ -1,0 +1,15 @@
+body {
+  background-color: red;
+}
+
+.container {
+  width: 100vw;
+  height: 30px;
+}
+
+.container .child {
+  background-color: blue;
+  height: 30px !important;
+  width: 230px !important;
+  display: block;
+}
