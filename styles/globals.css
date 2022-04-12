@@ -1,3 +1,29 @@
+@import url("http://fonts.cdnfonts.com/css/soloist-halftone");
+@import url("http://fonts.cdnfonts.com/css/context");
+
+:root {
+    --primary-color: #adff02;
+    --white-color: #fff;
+  }
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    .fs-custom-primary {
+        font-family: "Soloist Halftone", sans-serif;
+      }
+
+      .fs-custom-secondary {
+        font-family: "context", sans-serif;
+      }
+
+      .text-primary-500{
+        color: var(--primary-color);
+    }
+    .background-primary{
+      background-color: var(--primary-color);
+    }
+  }
+

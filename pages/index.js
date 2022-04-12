@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import Header from '../partials/header';
+import HomePage from './home.page';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
     return (
-        <div className={styles.container}>
+        <div className="h-screen bg-[url('/images/said-ait-driss-back.jpg')] bg-no-repeat bg-cover bg-center">
             <Head>
                 <title>Create Next App</title>
                 <meta
@@ -13,7 +14,8 @@ export default function Home() {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <h1 className="text-red-500 text-xl">dfddfdfd</h1>
+            <Header></Header>
+            <HomePage></HomePage>
         </div>
     );
 }
