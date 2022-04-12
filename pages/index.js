@@ -4,7 +4,7 @@ import HomePage from './home.page';
 
 export default function Home() {
     return (
-        <div className="h-screen bg-[url('/images/said-ait-driss-back.jpg')] bg-no-repeat bg-cover bg-center">
+        <div className="h-screen bg-[url('/images/said-ait-driss-back1.jpg')] bg-no-repeat bg-cover bg-center">
             <Head>
                 <title>Create Next App</title>
                 <meta
