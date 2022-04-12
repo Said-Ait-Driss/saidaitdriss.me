@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Header from '../partials/header';
 import HomePage from './home.page';
-import styles from '../styles/Home.module.css';
 
 export default function Home() {
     return (

@@ -1,5 +1,6 @@
 @import url("http://fonts.cdnfonts.com/css/soloist-halftone");
 @import url("http://fonts.cdnfonts.com/css/context");
+@import url('http://fonts.cdnfonts.com/css/pilot-command');
 
 :root {
     --primary-color: #adff02;
@@ -17,6 +18,10 @@
 
       .fs-custom-secondary {
         font-family: "context", sans-serif;
+      }
+
+      .fs-custom-third {
+        font-family: "pilot command", sans-serif;
       }
 
       .text-primary-500{

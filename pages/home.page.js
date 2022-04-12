@@ -1,5 +1,6 @@
 import Particles from 'react-tsparticles';
 import ReactTypingEffect from 'react-typing-effect';
+import styles from '../styles/Home.module.css';
 
 const HomePage = () => {
     const options = {
@@ -74,10 +75,10 @@ const HomePage = () => {
         detectRetina: true,
     };
     return (
-        <div className="relative flex px-2 gap-4 h-5/6">
+        <div className="relative flex px-2 gap-4 h-5/6  justify-center items-center">
             <Particles options={options} />
-            <div className="flex-auto" style={{paddingTop: '20%'}}>
-                <h2 className="fs-custom-secondary ">
+            <div className="flex-auto pl-3">
+                <h2 className="fs-custom-third  py-5">
                     <span className="pl-2 py-2 rounded-full background-primary">
                         I'm
                     </span>{' '}
@@ -85,20 +86,25 @@ const HomePage = () => {
                 </h2>
                 <ReactTypingEffect
                     text={[
-                        'Développement Web',
-                        'Webmarketing',
-                        'Application mobile',
-                        'Mobile marketing',
-                        'SEM',
-                        'Développement back-end',
-                        'Référencement naturel: SEO',
-                        'Développement front-end',
+                        'Front-end Developer',
+                        'Back-end Developer',
+                        'React-native Developer',
                     ]}
                     speed="100"
                     eraseSpeed="100"
                     eraseDelay="1000"
                     typingDelay="500"
+                    staticText="I'am"
+                    className="typing-effect text-4xl font-bold"
                 />
+                <h2 className="py-5 text-4xl font-bold">Based in Moroco.</h2>
+                <div className="flex gap-2">
+                    <button className="relative py-2 px-6 background-primary rounded-lg text-black font-bold truncate">
+                        <span className={styles.wave}></span>
+                        <span className="text">Hire me</span>
+                    </button>
+                    <button className="p-2 font-bold">My resume</button>
+                </div>
             </div>
             <div className="flex-auto">dsd</div>
         </div>
