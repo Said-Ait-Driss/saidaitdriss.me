@@ -32,9 +32,9 @@ const SliderOver = ({ShowSlid, setShowSlid}) => {
                                         stroke="currentColor"
                                         aria-hidden="true">
                                         <path
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                            stroke-width="2"
+                                            strokeLinecap="round"
+                                            strokeLinejoin="round"
+                                            strokeWidth="2"
                                             d="M6 18L18 6M6 6l12 12"
                                         />
                                     </svg>
@@ -53,77 +53,77 @@ const SliderOver = ({ShowSlid, setShowSlid}) => {
                             <div className="relative mt-6 flex-1 px-4 sm:px-6">
                                 <div className="inset-0 px-4 sm:px-6">
                                     <div className="h-full " aria-hidden="true">
-                                        <ul class="sidenav-nav">
+                                        <ul className="sidenav-nav">
                                             <li>
                                                 <a
                                                     href="#/home-1/intro"
                                                     aria-current="page"
-                                                    class="active">
-                                                    <span class="anchor">
+                                                    className="active">
+                                                    <span className="anchor">
                                                         Home
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/about">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         About
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/resume">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         Resume
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/service">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         Service
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/portfolio">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         Portfolio
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/blog">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         Blog
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/testimonial">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         Testimonial
                                                     </span>
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="#/home-1/contact">
-                                                    <span class="anchor">
+                                                    <span className="anchor">
                                                         Contact
                                                     </span>
                                                 </a>
                                             </li>
                                         </ul>
-                                        <div class="sidenav-links">
+                                        <div className="sidenav-links">
                                             <ul>
                                                 <li>
                                                     <a href="!#">
                                                         <svg
                                                             stroke="currentColor"
                                                             fill="currentColor"
-                                                            stroke-width="0"
+                                                            strokeWidth="0"
                                                             viewBox="0 0 512 512"
-                                                            class="icon"
+                                                            className="icon"
                                                             height="1em"
                                                             width="1em"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -136,9 +136,9 @@ const SliderOver = ({ShowSlid, setShowSlid}) => {
                                                         <svg
                                                             stroke="currentColor"
                                                             fill="currentColor"
-                                                            stroke-width="0"
+                                                            strokeWidth="0"
                                                             viewBox="0 0 496 512"
-                                                            class="icon"
+                                                            className="icon"
                                                             height="1em"
                                                             width="1em"
                                                             xmlns="http://www.w3.org/2000/svg">
@@ -151,9 +151,9 @@ const SliderOver = ({ShowSlid, setShowSlid}) => {
                                                         <svg
                                                             stroke="currentColor"
                                                             fill="currentColor"
-                                                            stroke-width="0"
+                                                            strokeWidth="0"
                                                             viewBox="0 0 448 512"
-                                                            class="icon"
+                                                            className="icon"
                                                             height="1em"
                                                             width="1em"
                                                             xmlns="http://www.w3.org/2000/svg">

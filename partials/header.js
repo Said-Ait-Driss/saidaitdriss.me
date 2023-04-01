@@ -20,7 +20,7 @@ const Header = () => {
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <a href="#" className="z-10">
                             <span className="sr-only">said ait driss</span>
-                            <h1 className="fs-custom-primary text-2xl text-black">
+                            <h1 className="fs-custom-primary text-3xl text-black hover:text-primary-500 hover:scale-110">
                                 SAID
                             </h1>
                         </a>

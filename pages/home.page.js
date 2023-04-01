@@ -2,6 +2,8 @@ import Particles from 'react-tsparticles';
 import ReactTypingEffect from 'react-typing-effect';
 import styles from '../styles/Home.module.css';
 import Image from 'next/image';
+import ReactGA from 'react-ga';
+import {useEffect} from 'react';
 
 const HomePage = () => {
     const options = {
@@ -75,13 +77,39 @@ const HomePage = () => {
         },
         detectRetina: true,
     };
+
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
+
+    const hireMeClick = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'Hire Me Clicked :)',
+        });
+
+        console.log('Hire Me Clicked :)');
+    };
+
+    const viewMyResumeClick = () => {
+        ReactGA.event({
+            category: 'Button',
+            action: 'Click',
+            label: 'View my resume Clicked :)',
+        });
+
+        console.log('View my resume Clicked :)');
+    };
     return (
         <div className="relative flex px-2 gap-4 h-5/6 items-center">
             <Particles options={options} />
             <div className="hidden flex-col md:flex">
                 <ul>
                     <li className="my-1">
-                        <a href="#" title="twitter">
+                        <a
+                            href="https://mobile.twitter.com/AIT_DRISS_SAID"
+                            title="twitter">
                             <Image
                                 src={'/images/svg/twitter.svg'}
                                 width={15}
@@ -91,7 +119,7 @@ const HomePage = () => {
                         </a>
                     </li>
                     <li className="my-1">
-                        <a href="#" title="facebook">
+                        <a href="https://fb.com/said.aitdriss" title="facebook">
                             <Image
                                 src={'/images/svg/facebook.svg'}
                                 width={15}
@@ -101,9 +129,23 @@ const HomePage = () => {
                         </a>
                     </li>
                     <li className="my-1">
-                        <a href="#" title="github">
+                        <a
+                            href="https://github.com/Said-Ait-Driss"
+                            title="github">
                             <Image
                                 src={'/images/svg/github.svg'}
+                                width={15}
+                                height={15}
+                                className="hover:scale-125"
+                            />
+                        </a>
+                    </li>
+                    <li className="my-1">
+                        <a
+                            href="https://linkedin.com/in/said-ait-driss-6b747b179"
+                            title="linkedin">
+                            <Image
+                                src={'/images/svg/linkedin.svg'}
                                 width={15}
                                 height={15}
                                 className="hover:scale-125"
@@ -123,6 +165,7 @@ const HomePage = () => {
                 </h2>
                 <ReactTypingEffect
                     text={[
+                        'Software Engineer',
                         'Front-end Developer',
                         'Back-end Developer',
                         'React-native Developer',
@@ -132,17 +175,23 @@ const HomePage = () => {
                     eraseDelay="1000"
                     typingDelay="500"
                     staticText="I'm a"
-                    className="typing-effect text-5xl font-bold m-1"
+                    className="typing-effect sm:text-base lg:text-5xl xl:text-5xl font-bold m-1"
                 />
-                <h2 className="py-5 text-5xl font-bold m-1">
+                <h2 className="py-5 text-4xl font-bold m-1">
                     Based in Moroco.
                 </h2>
                 <div className="flex gap-2 m-1">
-                    <button className="relative py-2 px-6 background-primary rounded-lg text-black font-bold truncate hover:text-white">
+                    <a
+                        onClick={hireMeClick}
+                        href="mailto:saidaitdrissofficial@gmail.com?subject=Hiring me"
+                        className="relative py-2 px-6 background-primary rounded-lg text-black font-bold truncate hover:text-white
+                                    sm:text-base lg:text-lg xl:text-xl">
                         <span className={styles.wave}></span>
                         <span className="text">Hire me</span>
-                    </button>
-                    <button className="relative p-2 font-bold">
+                    </a>
+                    <button
+                        onClick={viewMyResumeClick}
+                        className="relative p-2 font-bold">
                         My resume
                     </button>
                 </div>

@@ -1,6 +1,6 @@
-@import url("http://fonts.cdnfonts.com/css/soloist-halftone");
-@import url("http://fonts.cdnfonts.com/css/context");
-@import url('http://fonts.cdnfonts.com/css/pilot-command');
+@import url("./fonts/soloist-halftone");
+@import url("./fonts/context.css");
+@import url('./fonts/pilot-command.css');
 
 :root {
     --primary-color: #adff02;
