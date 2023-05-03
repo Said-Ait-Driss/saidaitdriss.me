@@ -9,7 +9,6 @@
       stage ('installing dependencies'){
           when {
               changeRequest target: 'main'
-              currentBuild.result = 'SUCCESS'
           }
           steps {
             echo '📦️ installing deps ...'
