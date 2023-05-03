@@ -18,7 +18,7 @@
     post {
         always {
             sh 'echo cleanup after everything'
-            discordSend description: "Jenkins Pipeline Build", footer: "continuous-integration/jenkins/branch "+ currentBuild.currentResult + " for " + BUILD_USER, link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1103353416559906848/IbyFtbfvn2NDFyCnMPFaQ1r7L16UhRT_f5SscsnrdGkFCwFFQ9jSmPtjzqM-YdxacilO"
+            discordSend description: "Jenkins Pipeline Build", footer: "continuous-integration/jenkins/branch "+ currentBuild.currentResult + " for " + BUILD_USER +" \n " + CHANGE_AUTHOR + " pushed " + GIT_COMMIT, link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1103353416559906848/IbyFtbfvn2NDFyCnMPFaQ1r7L16UhRT_f5SscsnrdGkFCwFFQ9jSmPtjzqM-YdxacilO"
         }
 
         failure {
