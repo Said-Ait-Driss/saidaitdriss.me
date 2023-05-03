@@ -18,8 +18,7 @@
     post {
         always {
             sh 'echo cleanup after everything'
-            notifyEvents message: 'Hello <b>world</b>', token: 'reCT8w6E2oxOgYgyvf9uyjJ1EnU4ah21'
-            notifyEvents message: 'installing deps ...', token: 'reCT8w6E2oxOgYgyvf9uyjJ1EnU4ah21'
+            discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "https://discord.com/api/webhooks/1103353416559906848/IbyFtbfvn2NDFyCnMPFaQ1r7L16UhRT_f5SscsnrdGkFCwFFQ9jSmPtjzqM-YdxacilO"
         }
 
         failure {
