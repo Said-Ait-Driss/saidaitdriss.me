@@ -9,15 +9,18 @@
       stage ('installing dependencies'){
           when {
               changeRequest target: 'main'
+              currentBuild.result = 'SUCCESS'
           }
           steps {
             echo '📦️ installing deps ...'
+            notifyEvents message: 'installing deps ...', token: 'reCT8w6E2oxOgYgyvf9uyjJ1EnU4ah21'
           }
       }
     }
     post {
         always {
             sh 'echo cleanup after everything'
+            notifyEvents message: 'Hello <b>world</b>', token: 'reCT8w6E2oxOgYgyvf9uyjJ1EnU4ah21'
             discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "Webhook URL" 
         }
 
