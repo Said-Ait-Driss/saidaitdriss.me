@@ -15,7 +15,27 @@
           }
       }
     }
-  
+    post {
+        always {
+            sh 'echo cleanup after everything' 
+        }
+
+        failure {
+            sh 'echo only on failure' 
+        }
+
+        success {
+            sh 'echo only on success' 
+        }
+
+        changed {
+            sh 'echo only on if status changed from success to failure or vice a versa' 
+        }
+
+        unstable {
+            sh 'echo only on unstable' 
+        }
+    }
   }
   
   
