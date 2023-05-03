@@ -17,7 +17,8 @@
     }
     post {
         always {
-            sh 'echo cleanup after everything' 
+            sh 'echo cleanup after everything'
+            discordSend description: "Jenkins Pipeline Build", footer: "Footer Text", link: env.BUILD_URL, result: currentBuild.currentResult, title: JOB_NAME, webhookURL: "Webhook URL" 
         }
 
         failure {
