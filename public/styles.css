@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --bg-primary:#100F20;
+    --bg-secondary:#D3B357;
+    
+    --main-color:#D3B357;
+    --secondary-color:#474306;
+    
+    --lg-padding: 32px 48px;
+    --lg-padding-top: 15rem;
+    
+    --lg-margin:16px 10px;
+    --lg-margin-top:32px;
+
+    --main-border-raduis: 8px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+body{
+    background-color: var(--bg-primary);
+    padding: var(--lg-padding);
+}
+
+
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+
+/* header */
+#header-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-menu ul{
+    display: flex;
+}
+#header-menu ul li{
+    margin-right: 20px;
+    align-content: center;
+}
+#header-menu h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+#header-menu h1,#header-menu li a{
+    color: var(--main-color);
+}
+
+/* home */
+/* left  */
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: var(--lg-padding-top);
+}
+
+#home .left{
+    color: var(--main-color);
+}
+
+#home .left p{
+    font-size: 28px;
+}
+
+#home .left h2 span{
+    font-size: 100px;
+    font-weight: bolder;
+    line-height: calc(100px * 1.1) /* default  calc(100px * 1.5); */
+}
+
+#home .left .button-container{
+    margin-top: var(--lg-margin-top);
+}
+
+#home .bottom-arrow{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* right */
+#home .right .image-container{
+    position: relative;
+    display: inline-block;
+    width: 31.25rem;
+    height: 31.25rem;
+    top: -5rem;
+}
+
+#home .right .image-container .user-photo{
+    position: absolute;
+    background-image: url("/images/my_perfect_image.jpeg");
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 27rem;
+    height: 27rem;
+    z-index: -9;
+    right: 4rem;
+    top: -0.8rem;
+}
+
+#home .right .image-container .circle-border{
+    z-index: 9;
+}
+
+#home .right .image-container .plus-group{
+    position: absolute;
+    top: -3rem;
+    right: 5rem;
+}
+
+#home .right .image-container .rectangle-group{
+    position: absolute;
+    top: 20rem;
+    left: -1rem;
+}
+/* end of home */
+
+/* components */
+/* button */
+.button-container {
+    position: relative;
+    display: inline-block;
+}
+button.btn-primary{
+    width: 9.11rem;
+    height: 3.25rem;
+    margin: var(--lg-margin);
+    color: var(--secondary-color);
+    background-color: var(--bg-secondary);
+
+    border-radius: var(--main-border-raduis);
+
+    cursor: pointer;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--main-color);
+}
+
+.rectangle {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.2rem;
+    width: 9.11rem;
+    height: 3.25rem;
+    border-width: 1px;
+    border-color: var(--secondary-color);
+    border-style: solid;
+    pointer-events: none;
+    border-radius: var(--main-border-raduis);
+}
+button.btn-primary:hover, button.btn-primary:focus{
+    border-color: var(--secondary-color);
+}
+button.btn-primary:hover + .rectangle,
+button.btn-primary:focus + .rectangle {
+    border-width: 0;
+}

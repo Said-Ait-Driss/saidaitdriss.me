@@ -1,0 +1,21 @@
+- var professionWords = brief.profession.split(' ')
+
+include ../components/button.pug
+main(id="home")
+    div(class="left")
+        p Hello, I'm #{brief.firstName},
+        h2
+            each word in professionWords
+                span #{word}
+                br
+        p based in #{brief.country}
+        +button('Resume', 'btn-primary', 'button')
+        +button('Hire Me', 'btn-primary', 'button')
+    div(class="right")
+        div(class="image-container")
+            div(class="user-photo")
+                img(src="/images/plus-group.svg", alt="Image", class="plus-group")
+            img(src="/images/circle-border.svg", alt="Image", class="circle-border")
+            img(src="/images/rectangle-group.svg", alt="Image", class="rectangle-group")
+
+    a(href="#", class="bottom-arrow"): img(src="/images/bottom-arrow.svg", alt="")
