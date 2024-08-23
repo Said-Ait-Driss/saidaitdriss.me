@@ -7,8 +7,8 @@
     --main-color:#D3B357;
     --secondary-color:#474306;
     
-    --lg-padding: 32px 48px;
-    --lg-padding-top: 15rem;
+    --lg-padding: 64px 96px;
+    --lg-padding-top: 14rem;
     
     --lg-margin:16px 10px;
     --lg-margin-top:32px;
@@ -99,7 +99,6 @@ ul li{
     display: inline-block;
     width: 31.25rem;
     height: 31.25rem;
-    top: -5rem;
 }
 
 #home .right .image-container .user-photo{
