@@ -2,10 +2,25 @@ header
   nav(id="header-menu")
     h1 #{brief.username}
     ul
-        li: a(href='/') Home
-        li: a(href='/about') About
-        li: a(href='/work') Work
+        li: a.btn(
+            hx-get="/"
+            hx-target="body"
+            hx-push-url="true"
+            hx-swap="innerHTML"
+        ) Home
+        li: a.btn(
+            hx-get="/about"
+            hx-target="body"
+            hx-push-url="true"
+            hx-swap="innerHTML"
+        ) About
+        li: a.btn(
+            hx-get="/work"
+            hx-target="body"
+            hx-push-url="true"
+            hx-swap="innerHTML"
+        ) Work
     ul
         li(title="see said ait driss profile on meduim platform"): a(href='/work'): img(src="/images/meduim.svg", alt="see said ait driss profile on meduim platform")
-        li(title="see said ait driss profile on linkden platform"): a(href='/about'): img(src="/images/linkden.svg", alt="see said ait driss profile on linkden platform")
+        li(title="see said ait driss profile on linkden platform"): a(href="/"): img(src="/images/linkden.svg", alt="see said ait driss profile on linkden platform")
         li(title="see said ait driss profile on x platform"): a(href='/'): img(src="/images/x.svg", alt="see said ait driss profile on x platform")

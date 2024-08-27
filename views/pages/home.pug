@@ -2,7 +2,7 @@
 
 include ../components/button.pug
 main(id="home")
-    div(class="left")
+    div.left
         p Hello, I'm #{brief.firstName},
         h2
             each word in professionWords
@@ -11,11 +11,16 @@ main(id="home")
         p based in #{brief.country}
         +button('Resume', 'btn-primary', 'button')
         +button('Hire Me', 'btn-primary', 'button')
-    div(class="right")
-        div(class="image-container")
-            div(class="user-photo")
-                img(src="/images/plus-group.svg", alt="Image", class="plus-group")
-            img(src="/images/circle-border.svg", alt="Image", class="circle-border")
-            img(src="/images/rectangle-group.svg", alt="Image", class="rectangle-group")
+    div.right
+        div.image-container
+            div.user-photo
+                img.plus-group(src="/images/plus-group.svg", alt="Image")
+            img.circle-border(src="/images/circle-border.svg", alt="Image")
+            img.rectangle-group(src="/images/rectangle-group.svg", alt="Image")
 
-    a(href="#", class="bottom-arrow"): img(src="/images/bottom-arrow.svg", alt="")
+    a.bottom-arrow.btn(
+            hx-get="/about"
+            hx-target="body"
+            hx-push-url="true"
+            hx-swap="innerHTML"
+            ): img(src="/images/bottom-arrow.svg", alt="")

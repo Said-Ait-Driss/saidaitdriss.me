@@ -6,6 +6,7 @@
     
     --main-color:#D3B357;
     --secondary-color:#474306;
+    --light-main-color:#F7F197;
     
     --lg-padding: 64px 96px;
     --lg-padding-top: 14rem;
@@ -29,7 +30,6 @@ body{
     background-color: var(--bg-primary);
     padding: var(--lg-padding);
 }
-
 
 a{
     text-decoration: none;
@@ -130,8 +130,62 @@ ul li{
 }
 /* end of home */
 
+
+
+/* begin of about */
+#about h2{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: var(--lg-padding);
+    color: var(--light-main-color);
+}
+
+#about p,  #about div{
+    margin: var(--lg-padding);
+    color: var(--main-color);
+}
+#about ul li{
+    margin: 0.5rem 2rem;
+    list-style: square;
+}
+/* end of about */
+
+/* begin of work */
+#work h2{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: var(--lg-padding);
+    color: var(--light-main-color);
+}
+#work p,  #work > div{
+    margin: var(--lg-padding);
+    color: var(--main-color);
+}
+#work ul  li{
+    margin:  0.5rem 2rem;
+    list-style: square;
+    color: var(--main-color);
+}
+
+#work ul li  span{
+    font-size: .7rem;
+    color: var(--secondary-color);
+}
+#work ul li div{
+    font-size: .8rem;
+}
+
+#work ul li ul li{
+    font-size: .8rem;
+    color: var(--secondary-color);
+}
+/* end of work */
+
 /* components */
 /* button */
+.btn{
+    cursor: pointer;
+}
 .button-container {
     position: relative;
     display: inline-block;

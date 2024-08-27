@@ -1,0 +1,89 @@
+{
+    "brief":{
+        "username":"s.aitdriss",
+        "firstName":"Said",
+        "profession":"Software Developer",
+        "country":"Morocco"
+    },
+    "about":"A highly skilled Full Stack Developer with a Master’s degree in Computer Science and over 3 years of experience in building robust software solutions. Proficient in a diverse range of technologies, including JavaScript frameworks such as React, React Native, Vue.js, Node.js, Express.js, and Nest.js, as well as Java-based technologies like Spring and Spring Boot.\n Coding since the age of 20, I have developed a strong foundation in both front-end and back-end development, enabling me to create seamless and efficient applications.\n My passion for technology drives me to continuously learn and adapt to new tools and frameworks, ensuring that I stay at the forefront of industry trends.",
+    "education":[
+
+        {
+            "schoolName":"University American of professional studies",
+            "degree":"Master degree in Computer Science",
+            "graduationDate":"2024"
+        },
+        {
+            "schoolName":"Sup Mti Rabat",
+            "degree":"Bachelor’s degree in computer engineering",
+            "graduationDate":"2025"
+        },
+        {
+            "schoolName":"University American of professional studies",
+            "degree":"Bachelor’s degree in Computer Science",
+            "graduationDate":"2023"
+        },{
+            "schoolName":"Specialized institute of applied technology",
+            "degree":"Diploma in Computer Science",
+            "graduationDate":"2021"
+        },{
+            "schoolName":"High school Sidi Dawd Ouarzazate",
+            "degree":"Bachelor of Life and Earth Sciences",
+            "graduationDate":"2018"
+        }
+    ],
+    "experiences":[
+        {
+            "companyName":"Shepherd Labs",
+            "jobTitle":"Full Stack Developer",
+            "startDate":"2022-04-18",
+            "endDate":"present",
+            "description":"Developed a robust softwares using Node js, Nest js, React js, Vue js, MongoDB, ElastiSearch",
+            "technologies":["Nest js","MongoDB","Node js","React js", "Vue js","ElastiSearch","MongoDB"],
+            "achievements":[
+                "Developed a scalable and efficient software systems for clients",
+                "Developed marvelous solutions for crawling and data extraction",
+                "Enhanced and Improved the UI of internal Websites",
+                "developed internal solutions"
+            ]
+        },
+        {
+            "companyName":"Albri",
+            "jobTitle":"Full Stack Developer",
+            "startDate":"2021-07-28",
+            "endDate":"2021-01-01",
+            "description":"Developed a robust softwares including both of Backend and Frontend of web apps using Php, Laravel, Node js, React js, mobile apps using react native.",
+            "technologies":["Php","Laravel","Node js","React js","React native","MySql"],
+            "achievements":[
+                "Developed a scalable and efficient software systems for clients",
+                "Enhanced the overall UI and UX of the applications"
+            ]
+        },
+
+        {
+            "companyName":"Self Employer",
+            "jobTitle":"Full Stack Developer",
+            "startDate":"2021-01-13",
+            "endDate":"2021-04-07",
+            "description":"Developed a robust softwares Php, Laravel, Jquery, MySql",
+            "technologies":["Php","Laravel","Jquery","MySql"],
+            "achievements":[
+                "Developed a scalable and efficient software systems for personal use cases and for clients",
+                "Improved the overall performance of the applications",
+                "Enhanced the security of the applications",
+                "Follow the clients on their needs"
+            ]            
+        },
+        {
+            "companyName":"Hard tech",
+            "jobTitle":"Backend Developer",
+            "startDate":"2020-07-01",
+            "endDate":"2020-09-01",
+            "description":"Developed Backend of an Ecommerce web application using Spring, Spring boot, and MongoDB",
+            "technologies":["Spring","Spring boot","MongoDB"],
+            "achievements":["Developed a scalable and efficient backend system","Improved the overall performance of the application",
+                            "Enhanced the security of the application"
+                        ]
+        }
+    ]
+}
