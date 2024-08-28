@@ -238,6 +238,7 @@ ul li{
     display: flex;
     justify-content: space-between;
 }
+
 #contact h2{
     font-weight: bolder;
     font-size: 2.5rem;
@@ -253,10 +254,14 @@ ul li{
 #contact > div > div .image-container {
     position: relative;
     display: inline-block;
-    width: 31.25rem;
-    height: 31.25rem;
+    height: 27rem;
+    width: 27rem;
 }
 
+#contact .circle-border {
+    height: 27rem;
+    width: 27rem;
+}
 #contact > div > div .image-container .contact-photo {
     position: absolute;
     background-image: url("/images/contact.png");
@@ -266,12 +271,13 @@ ul li{
     width: 27rem;
     height: 27rem;
     z-index: -9;
-    right: 4rem;
     top: -0.8rem;
+    right: -.3rem;
 }
 
 #contact > .right  {
     margin: var(--lg-padding);
+    padding-top: var(--md-padding-top);
 }
 #contact > .right p, #contact > .right strong{
     color: var(--main-color);
@@ -438,6 +444,54 @@ input:focus,textarea:focus {
         order: 1;
     }
 
+    /* about */
+    #about h2{
+        margin: var(--sm-padding);
+    }
+    #about p,  #about div{
+        margin: var(--sm-padding);
+    }
+
+    /* work */
+    #work h2{
+        margin: var(--sm-padding);
+    }
+    #work p,  #work > div{
+        margin: var(--sm-padding);
+    }
+    #work .left{
+        order: 2;
+    }
+    #work .right {
+        order: 1;
+    }
+    /* contact */
+    #contact {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact h2{
+        margin: var(--sm-padding);
+    }
+    #contact .left {
+        width: 100%;
+    }
+    #contact > .right  {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #contact > div > div {
+        margin: 0;
+        color: var(--main-color);
+    }
+
+    #contact .left .image-container {
+        display: none;
+    }
+ 
+
+    /* componenets */
     button.btn-primary:hover + .rectangle,
     button.btn-primary:focus + .rectangle {
         border-width: 3px;
