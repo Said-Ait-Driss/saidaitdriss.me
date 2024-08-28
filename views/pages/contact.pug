@@ -1,0 +1,21 @@
+include ../components/button.pug
+main(id="contact")
+    div 
+        h2 contact.
+        div 
+            .image-container
+                .contact-photo
+                img.circle-border(src="/images/circle-border.svg", alt="Image")
+    .right 
+        strong Get in Touch!
+        p Let’s start a conversation!
+        p I’d love to hear from you! If you have any questions, feedback, or just want to connect, feel free to reach out. You can contact me via :
+        form.form
+            .form-controll
+                label(for="email") Email Address :
+                input(type="email", placeholder="example@gmail.com")
+            .form-controll
+                label(for="message") Your Message :
+                textarea(name="message", placeholder="Your Message here")
+            .form-controll 
+                +button('Submit', 'btn-primary', 'button')

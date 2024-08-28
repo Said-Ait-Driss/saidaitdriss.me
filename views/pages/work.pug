@@ -1,3 +1,5 @@
+include ../components/pojectCard.pug
+
 main(id="work")
     h2 work.
     p I am excited to share a brief collection of accomplishments that reflect my skills and passion. Each piece showcases my dedication to quality and innovation, whether through creative design, technical expertise, or problem-solving abilities. I invite you to work together. Thank you for taking the time to review my portfolio!
@@ -13,3 +15,7 @@ main(id="work")
                         ul
                             each technology in experience.achievements 
                                 li #{technology}
+    div Take a look of some of my projects that I have built :
+        div.projects-container
+            each project in projects
+                +pojectCard(project.mainImage, project.projectName, project.description, project.technologies)

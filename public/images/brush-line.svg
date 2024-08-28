@@ -1,0 +1,12 @@
+<svg width="100%" height="30" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .brush {
+        fill: none;
+        stroke: #D3B357;
+        stroke-width: 2.6;
+      }
+    </style>
+  </defs>
+  <path class="brush" d="M 0 20 Q 10 25, 20 20 T 40 20 T 60 20 T 80 20 T 100 20" />
+</svg>

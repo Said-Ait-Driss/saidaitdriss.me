@@ -3,9 +3,10 @@
         "username":"s.aitdriss",
         "firstName":"Said",
         "profession":"Software Developer",
-        "country":"Morocco"
+        "country":"Morocco",
+        "tel":""
     },
-    "about":"A highly skilled Full Stack Developer with a Master’s degree in Computer Science and over 3 years of experience in building robust software solutions. Proficient in a diverse range of technologies, including JavaScript frameworks such as React, React Native, Vue.js, Node.js, Express.js, and Nest.js, as well as Java-based technologies like Spring and Spring Boot.\n Coding since the age of 20, I have developed a strong foundation in both front-end and back-end development, enabling me to create seamless and efficient applications.\n My passion for technology drives me to continuously learn and adapt to new tools and frameworks, ensuring that I stay at the forefront of industry trends.",
+    "about":"A highly skilled Full Stack Developer with a Master’s degree in Computer Science and over 3 years of experience in building robust software solutions. Proficient in a diverse range of technologies, including JavaScript frameworks such as React, React Native, Vue.js, Node.js, Express.js, and Nest.js, as well as Java-based technologies like Spring and Spring Boot.\n Coding since the age of 19, I have developed a strong foundation in both front-end and back-end development, enabling me to create seamless and efficient applications.\n My passion for technology drives me to continuously learn and adapt to new tools and frameworks, ensuring that I stay at the forefront of industry trends.",
     "education":[
 
         {
@@ -65,8 +66,8 @@
             "jobTitle":"Full Stack Developer",
             "startDate":"2021-01-13",
             "endDate":"2021-04-07",
-            "description":"Developed a robust softwares Php, Laravel, Jquery, MySql",
-            "technologies":["Php","Laravel","Jquery","MySql"],
+            "description":"Developed a robust softwares Php, Laravel, JQuery, MySql",
+            "technologies":["Php","Laravel","JQuery","MySql"],
             "achievements":[
                 "Developed a scalable and efficient software systems for personal use cases and for clients",
                 "Improved the overall performance of the applications",
@@ -84,6 +85,81 @@
             "achievements":["Developed a scalable and efficient backend system","Improved the overall performance of the application",
                             "Enhanced the security of the application"
                         ]
+        }
+    ],
+    "projects":[
+        {
+            "projectName":"Vehicle Management System (VMS)",
+            "description":"A web-based application designed to efficiently manage and track the fleet of vehicles, including cars and motorcycles, for a public company. Built using Laravel as the backend framework and MySQL as the database management system, the application provides a robust and scalable solution for managing vehicle-related operations",
+            "features":[
+                "User Authentication and Roles",
+                "Vehicle Management",
+                "Fuel Management",
+                "Maintenance Tracking(regular maintenance activities:oil changes, tire rotations, etc)",
+                "Maintain a history of maintenance records for each vehicle",
+                "Trip Management(Log trips taken by each vehicle, including start and end locations, distance traveled, and purpose of the trip)",
+                "Reporting and Analytics(Visualize data through charts and graphs)"
+            ],
+            "technologies":["Laravel (PHP framework)","MySQL","Blade templating engine, HTML, CSS, JavaScript, JQuery"],
+            "mainImage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.WPNlhmw4lW6UckITDzQVawHaD9%26pid%3DApi&f=1&ipt=d1837cdcadb17f092774a6bb859b69a017ec2f9b6bd9805f7c548000df78348e&ipo=images",
+            "images":["",""]
+        },
+        {
+            "projectName":"Trip Management application",
+            "description":"Trip Management application built on Laravel and React Native is designed to streamline the planning, organization, and execution of travel itineraries for users",
+            "features":[
+                "User Authentication",
+                "Trip Planning",
+                "Admin Dashboard"
+            ],
+            "technologies":["Laravel (PHP framework)","MySQL","React native"],
+            "mainImage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.HL7u0v1lIexqKeG9wWYV3wHaFL%26pid%3DApi&f=1&ipt=ad2579b616c03803283c56287e579006a0900736a4f5320f5cbcb39bb404846c&ipo=images",
+            "images":["",""]
+        },
+        {
+            "projectName":"GovPaper Manager",
+            "description":"A comprehensive document management application designed specifically for public government companies to efficiently store, organize, and manage their order-related paperwork.",
+            "features":[
+                "Document Storage and Organization",
+                "Automated Notifications",
+                "Search and Filter Functionality",
+                "User Dashboard"
+            ],
+            "technologies":["Php","HTML","CSS","JavaScript","JQuery"],
+            "mainImage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2ICtFwQRWWkeQyFoNiDLoAHaE8%26pid%3DApi&f=1&ipt=c51574750d2da760ba6e84cee0e9c953b05aa78e314fc1b440d258333f5c0649&ipo=images",
+            "images":["",""]
+        },
+        {
+            "projectName":"Quran Karim App",
+            "description":"The Quran Karim app is a beautifully designed mobile application that allows users to read and explore the Quran and Hadith with ease and convenience",
+            "features":[
+                "Quran Reading",
+                "Ad'iya (supplications):A dedicated section for various Ad'iya, including daily supplications, special occasions, and prayers for specific needs",
+                "User-Friendly Interface",
+                "Offline Access",
+                "Customization Options(Users can adjust font sizes, styles)"
+            ],
+            "technologies":["Dart","Fluter"],
+            "mainImage":"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.-hsMAsSFf2r9amlbuqUGXAHaFj%26pid%3DApi&f=1&ipt=98a5192b94ebce5c46f3dd20446e06af91895914bfcfec6d0443891eb8b97975&ipo=images",
+            "images":["",""]
+        }
+    ],
+    "contacts":[
+        {
+            "website":"Call : 212-617-2601",
+            "link":"tel:212617260124"
+        },
+        {
+            "website":"linkedin",
+            "link":"https://linkedin.com/saidaitdriss"
+        },
+        {
+            "website":"instagram",
+            "link":"https://instagram.com/saidaitdriss"
+        },
+        {
+            "website":"x",
+            "link":"https://x.com/saidaitdriss"
         }
     ]
 }

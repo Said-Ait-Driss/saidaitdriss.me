@@ -12,7 +12,11 @@ router.get("/about",(req,res)=>{
 })
 
 router.get("/work",(req,res)=>{
-    res.render("work",{brief:profile.brief,experiences:profile.experiences})
+    res.render("work",{brief:profile.brief,experiences:profile.experiences,projects:profile.projects})
+})
+
+router.get("/contact",(req,res)=>{
+    res.render("contact",{brief:profile.brief,contacts:profile.contacts})
 })
 
 

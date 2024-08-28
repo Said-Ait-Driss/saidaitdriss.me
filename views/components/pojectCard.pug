@@ -1,0 +1,9 @@
+mixin pojectCard(imageSrc, projectName, description, technologies)
+    div(id="project-card")
+        img(src=imageSrc, alt=projectName)
+        h3 #{projectName}
+        div
+            p #{description}
+            ul
+                each technology in technologies
+                    li #{technology}

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* Global Styles */
 :root{
     --bg-primary:#100F20;
     --bg-secondary:#D3B357;
@@ -9,10 +10,16 @@
     --light-main-color:#F7F197;
     
     --lg-padding: 64px 96px;
+    --md-padding: 32px 48px;
+    --sm-padding: 16px 24px;
+
     --lg-padding-top: 14rem;
+    --md-padding-top: 7rem;
     
     --lg-margin:16px 10px;
+    --md-margin: 5rem;
     --lg-margin-top:32px;
+    --md-margin-top: 16px;
 
     --main-border-raduis: 8px;
 }
@@ -38,6 +45,30 @@ ul li{
     list-style: none;
 }
 
+/* scrollbar For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: .2rem;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: var(--main-border-raduis);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-primary);
+}
+/* For Firefox */
+.scrollable {
+    scrollbar-width: .2rem;
+    scrollbar-color: var(--secondary-color);
+}
+
 /* header */
 #header-menu {
     display: flex;
@@ -55,17 +86,28 @@ ul li{
     font-weight: bold;
     font-size: 24px;
 }
+#header-menu .brand img{
+    margin-top: -15px;
+    margin-left: 5px;
+    animation-name: brand-border-animation;
+    animation-duration: 4s;
+}
 #header-menu h1,#header-menu li a{
     color: var(--main-color);
+}
+
+@keyframes brand-border-animation {
+    from {width: 0;}
+    to {width: 100%;}
 }
 
 /* home */
 /* left  */
 #home{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     padding-top: var(--lg-padding-top);
+    flex-wrap: wrap;
 }
 
 #home .left{
@@ -77,7 +119,7 @@ ul li{
 }
 
 #home .left h2 span{
-    font-size: 100px;
+    font-size: 5.3rem;
     font-weight: bolder;
     line-height: calc(100px * 1.1) /* default  calc(100px * 1.5); */
 }
@@ -87,8 +129,8 @@ ul li{
 }
 
 #home .bottom-arrow{
-    position: absolute;
-    bottom: 2rem;
+    position: fixed;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -97,8 +139,8 @@ ul li{
 #home .right .image-container{
     position: relative;
     display: inline-block;
-    width: 31.25rem;
-    height: 31.25rem;
+    height: 27rem;
+    width: 27rem;
 }
 
 #home .right .image-container .user-photo{
@@ -106,15 +148,18 @@ ul li{
     background-image: url("/images/my_perfect_image.jpeg");
     background-repeat: no-repeat;
     border-radius: 50%;
+    background-size: cover;
     width: 27rem;
     height: 27rem;
     z-index: -9;
-    right: 4rem;
+    right: -.3rem;
     top: -0.8rem;
 }
 
 #home .right .image-container .circle-border{
     z-index: 9;
+    width: 27rem;
+    height: 27rem;
 }
 
 #home .right .image-container .plus-group{
@@ -179,7 +224,87 @@ ul li{
     font-size: .8rem;
     color: var(--secondary-color);
 }
+
+#work .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: var(--lg-margin-top);
+}
 /* end of work */
+
+/* begin of contact */
+#contact{
+    display: flex;
+    justify-content: space-between;
+}
+#contact h2{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: var(--lg-padding);
+    color: var(--light-main-color);
+}
+
+#contact > div > div {
+    margin: var(--lg-padding);
+    color: var(--main-color);
+}
+
+#contact > div > div .image-container {
+    position: relative;
+    display: inline-block;
+    width: 31.25rem;
+    height: 31.25rem;
+}
+
+#contact > div > div .image-container .contact-photo {
+    position: absolute;
+    background-image: url("/images/contact.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    width: 27rem;
+    height: 27rem;
+    z-index: -9;
+    right: 4rem;
+    top: -0.8rem;
+}
+
+#contact > .right  {
+    margin: var(--lg-padding);
+}
+#contact > .right p, #contact > .right strong{
+    color: var(--main-color);
+}
+#contact > .right strong {
+    font-size: 1.5rem;
+    margin-top: calc(var(--lg-margin-top) + 1rem);
+    margin-bottom: 5rem;
+}
+#contact > .right div {
+    display: flex;
+}
+
+#contact > .right span a{
+    width: 5rem;
+}
+#contact > .right form {
+    margin-top: 8rem;
+    color: var(--main-color);
+}
+#contact > .right form .form-controll{
+    flex-direction: column;
+    margin: var(--lg-margin);
+}
+
+#contact > .right form label {
+    margin-bottom: .2rem;
+}
+
+/* end of contact */
+
+
+
 
 /* components */
 /* button */
@@ -220,8 +345,120 @@ button.btn-primary{
 }
 button.btn-primary:hover, button.btn-primary:focus{
     border-color: var(--secondary-color);
+    font-weight: 500;
 }
 button.btn-primary:hover + .rectangle,
 button.btn-primary:focus + .rectangle {
-    border-width: 0;
+    border-width: 3px;
+    top: 0.7rem;
+    left: 0.4rem;
 }
+/*  end of button component */
+
+/* beging of project card component */
+#project-card {
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--bg-secondary);
+    border-radius: var(--main-border-raduis);
+    margin: 1rem;
+    overflow: hidden;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+
+#project-card img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: var(--main-border-raduis) var(--main-border-raduis) 0 0;
+}
+
+#project-card h3{
+    color: var(--secondary-color);
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    padding: .2rem;
+}
+#project-card div {
+    padding: .2rem;
+    margin: .2rem;
+    overflow: scroll;
+    height: 10rem;
+}
+#project-card div p {
+    padding: 0;
+    margin: 0;
+}
+#project-card p, #project-card ul li{
+    color: var(--secondary-color);
+}
+/* end of project card component */
+
+/* begin of input */
+input,textarea{
+    background-color: transparent;
+    border-color: var(--main-color);
+    border-width: .1rem;
+    border-style: solid;
+    border-radius: var(--main-border-raduis);
+    padding: .8rem;
+    color: var(--main-color);
+    outline: var(--secondary-color);
+}
+input:focus,textarea:focus {
+    border-width: .15rem;
+    font-weight: bold;
+}
+/* end of input */
+/* end of components */
+
+
+/*  media query */
+
+@media only screen and (max-width: 1176px) { 
+    *{
+        font-size: 14px;
+    }
+    body {
+        padding: var(--sm-padding);
+    }
+    header #header-menu ul:first-of-type, .bottom-arrow {
+        display: none;
+    }
+    #home {
+        padding-top: var(--md-padding-top);
+        justify-content: center;
+    }
+    #home .left{
+        order: 2;
+        margin: var(--md-margin);
+    }
+    #home .right {
+        order: 1;
+    }
+
+    button.btn-primary:hover + .rectangle,
+    button.btn-primary:focus + .rectangle {
+        border-width: 3px;
+        top: 0.9rem;
+        left: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 380px) { 
+    *{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
