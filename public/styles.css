@@ -96,6 +96,48 @@ ul li{
     color: var(--main-color);
 }
 
+header #header-menu span.btn, header #header-menu #mobile-menu{
+    display: none;
+}
+
+header #header-menu #mobile-menu{
+    background-color: var(--bg-secondary);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+}
+header #header-menu #mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+header #header-menu #mobile-menu ul li {
+    margin-top: var(--md-margin-top);
+    margin-right: 0;
+    overflow: hidden;
+}
+
+header #header-menu #mobile-menu ul li a:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+
+header #header-menu #mobile-menu ul  li a{
+    color: var(--secondary-color);
+    padding: .4rem 1rem;
+    display: block;
+    width: 100%; 
+    height: 100%;
+}
+
+.active{
+    color: var(--main-color) !important;
+    background-color: var(--secondary-color);
+}
+
 @keyframes brand-border-animation {
     from {width: 0;}
     to {width: 100%;}
@@ -429,9 +471,14 @@ input:focus,textarea:focus {
     body {
         padding: var(--sm-padding);
     }
-    header #header-menu ul:first-of-type, .bottom-arrow {
+    header #header-menu ul:not(.mobile-links), .bottom-arrow {
         display: none;
     }
+
+    header #header-menu span.btn{
+        display: block;
+    }
+
     #home {
         padding-top: var(--md-padding-top);
         justify-content: center;
