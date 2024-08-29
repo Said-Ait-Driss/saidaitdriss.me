@@ -39,6 +39,7 @@
 body{
     background-color: var(--bg-primary);
     padding: var(--lg-padding);
+    -webkit-font-smoothing: antialiased;
 }
 
 a{
@@ -96,8 +97,41 @@ ul li{
     animation-duration: 4s;
 }
 #header-menu h1,#header-menu li a{
+    position: relative;
     color: var(--main-color);
 }
+
+/*  hand draw line  under tag */
+.hand-drawn-link {
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+}
+
+.hand-drawn-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0%;
+    background: url('/images/hand-line.svg') repeat-x;
+    background-size: contain;
+    transform: translateY(8px);
+    opacity: 0;
+    transition: all 0.2s;
+}
+.hand-drawn-link:hover::after {
+    opacity: 1; 
+    width: 100%;
+}
+.hand-drawn-link.active-link::after{
+    opacity: 1; 
+    width: 100%;
+}
+
+
 
 header #header-menu span.btn, header #header-menu #mobile-menu{
     display: none;
@@ -128,7 +162,6 @@ header #header-menu #mobile-menu ul.mobile-links li a:hover{
     color: var(--main-color);
 }
 
-
 header #header-menu #mobile-menu ul.mobile-links  li a{
     color: var(--secondary-color);
     padding: .4rem 1rem;
@@ -151,6 +184,7 @@ header #header-menu #mobile-menu ul.mobile-social-links img{
     stroke: red;
     stroke-width: 1px;
 }
+
 
 .active{
     color: var(--main-color) !important;

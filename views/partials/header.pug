@@ -4,26 +4,26 @@ header
         h1 #{brief.username}
         div: img(src="/images/brush-line.svg", alt="")
     ul
-        li: a.btn(
+        li: a.btn.hand-drawn-link(
             hx-get="/"
             hx-target="body"
             hx-push-url="true"
             hx-swap="innerHTML"
         ) Home
-        li: a.btn(
+        li: a.btn.hand-drawn-link(
             hx-get="/about"
             hx-target="body"
             hx-push-url="true"
             hx-swap="innerHTML"
         ) About
-        li: a.btn(
+        li: a.btn.hand-drawn-link(
             hx-get="/work"
             hx-target="body"
             hx-push-url="true"
             hx-swap="innerHTML"
         ) Work
-        li: a Blog
-        li: a.btn(
+        li: a.btn.hand-drawn-link  Blog
+        li: a.btn.hand-drawn-link(
             hx-get="/contact"
             hx-target="body"
             hx-push-url="true"
@@ -62,6 +62,7 @@ header
                 hx-swap="innerHTML"
             ) Contact
             li: a Blog
+
         
         ul.mobile-social-links
             li(title="see said ait driss profile on meduim platform"): a(href='/work'): img(src="/images/meduim.svg", alt="see said ait driss profile on meduim platform")

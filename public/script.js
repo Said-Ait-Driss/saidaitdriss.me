@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function initializeMenu() {
         let menuBtn = document.getElementById("menu-btn");
         let mobileMenu = document.getElementById("mobile-menu");
+
         let main = document.querySelector("main");
         let img = menuBtn.firstChild;
 
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let pathname = window.location.pathname;
 
+        // set active class for mobile menu
         mobileMenu.querySelectorAll("a").forEach(function(link) {
             if (link.getAttribute("hx-get") == pathname) {
                 link.classList.add("active");
@@ -28,6 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
                 link.classList.remove("active");
             }
         });
+
+        // set active class for desktop menu
+        document.querySelectorAll(".hand-drawn-link").forEach(function(link) {
+            
+            if (link.getAttribute("hx-get") == pathname) {
+                console.log(link.getAttribute("hx-get"));
+                link.classList.add("active-link");
+            } else {
+                link.classList.remove("active-link");
+            }
+        })
     }
 
     // Initialize the menu on page load
