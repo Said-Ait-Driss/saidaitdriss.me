@@ -15,6 +15,8 @@
 
     --lg-padding-top: 14rem;
     --md-padding-top: 7rem;
+    --sm-padding-top: 1rem;
+    --sm-padding-bottom: 1rem;
     
     --lg-margin:16px 10px;
     --md-margin: 5rem;
@@ -31,6 +33,7 @@
     font-weight: 400;
     font-style: normal;
     font-size: 18px;
+    text-align: justify;
 }
 
 body{
@@ -108,29 +111,45 @@ header #header-menu #mobile-menu{
     left: 0;
     width: 50%;
     height: 100vh;
+    overflow: hidden;
 }
-header #header-menu #mobile-menu ul {
+header #header-menu #mobile-menu ul.mobile-links {
     display: flex;
     flex-direction: column;
 }
-header #header-menu #mobile-menu ul li {
+header #header-menu #mobile-menu ul.mobile-links li {
     margin-top: var(--md-margin-top);
     margin-right: 0;
     overflow: hidden;
 }
 
-header #header-menu #mobile-menu ul li a:hover{
+header #header-menu #mobile-menu ul.mobile-links li a:hover{
     background-color: var(--secondary-color);
     color: var(--main-color);
 }
 
 
-header #header-menu #mobile-menu ul  li a{
+header #header-menu #mobile-menu ul.mobile-links  li a{
     color: var(--secondary-color);
     padding: .4rem 1rem;
     display: block;
     width: 100%; 
     height: 100%;
+}
+header #header-menu #mobile-menu ul.mobile-social-links {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--secondary-color);
+    padding-top: var(--sm-padding-top);
+    padding-bottom: var(--sm-padding-bottom);
+    bottom: 0;
+    width: 100%;
+}
+header #header-menu #mobile-menu ul.mobile-social-links img{
+    fill: red;
+    stroke: red;
+    stroke-width: 1px;
 }
 
 .active{
@@ -369,6 +388,7 @@ button.btn-primary{
     margin: var(--lg-margin);
     color: var(--secondary-color);
     background-color: var(--bg-secondary);
+    text-align: center;
 
     border-radius: var(--main-border-raduis);
 
@@ -385,7 +405,7 @@ button.btn-primary{
     left: 0.2rem;
     width: 9.11rem;
     height: 3.25rem;
-    border-width: 1px;
+    border-width: 2px;
     border-color: var(--secondary-color);
     border-style: solid;
     pointer-events: none;

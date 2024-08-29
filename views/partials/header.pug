@@ -55,10 +55,15 @@ header
                 hx-push-url="true"
                 hx-swap="innerHTML"
             ) Work
-            li: a Blog
             li: a.btn(
                 hx-get="/contact"
                 hx-target="body"
                 hx-push-url="true"
                 hx-swap="innerHTML"
             ) Contact
+            li: a Blog
+        
+        ul.mobile-social-links
+            li(title="see said ait driss profile on meduim platform"): a(href='/work'): img(src="/images/meduim.svg", alt="see said ait driss profile on meduim platform")
+            li(title="see said ait driss profile on linkden platform"): a(href="/"): img(src="/images/linkden.svg", alt="see said ait driss profile on linkden platform")
+            li(title="see said ait driss profile on x platform"): a(href='/'): img(src="/images/x.svg", alt="see said ait driss profile on x platform")
