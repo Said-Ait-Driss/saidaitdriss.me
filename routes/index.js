@@ -5,7 +5,7 @@ import sendMessageToChannel from '../helpers/bot.js';
 const router = express.Router();
 
 router.get('/', (req, res) => {
-    const ip = req.socket.remoteAddress
+    const ip = req.clientIp
     
     console.log(ip);
 
