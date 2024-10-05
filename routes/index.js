@@ -5,6 +5,10 @@ import sendMessageToChannel from '../helpers/bot.js';
 const router = express.Router();
 
 router.get('/', (req, res) => {
+    const ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    
+    console.log(ip);
+
     res.render('index', {brief:profile.brief});
 });
 
