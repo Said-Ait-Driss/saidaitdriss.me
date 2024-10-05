@@ -8,6 +8,8 @@ router.get('/', (req, res) => {
     const ip = req.clientIp
     
     console.log(ip);
+    console.log(req.connection.remoteAddress);
+    console.log(req.headers['x-real-ip']);
 
     res.render('index', {brief:profile.brief});
 });
