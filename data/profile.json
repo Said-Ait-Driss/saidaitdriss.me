@@ -4,7 +4,7 @@
         "firstName":"Said",
         "profession":"Software Developer",
         "country":"Morocco",
-        "tel":""
+        "tel":"+212617260124"
     },
     "about":"A highly skilled Full Stack Developer with a Master’s degree in Computer Science and over 3 years of experience in building robust software solutions. Proficient in a diverse range of technologies, including JavaScript frameworks such as React, React Native, Vue.js, Node.js, Express.js, and Nest.js, as well as Java-based technologies like Spring and Spring Boot.\n Coding since the age of 19, I have developed a strong foundation in both front-end and back-end development, enabling me to create seamless and efficient applications.\n My passion for technology drives me to continuously learn and adapt to new tools and frameworks, ensuring that I stay at the forefront of industry trends.",
     "education":[
@@ -13,11 +13,6 @@
             "schoolName":"University American of professional studies",
             "degree":"Master degree in Computer Science",
             "graduationDate":"2024"
-        },
-        {
-            "schoolName":"Sup Mti Rabat",
-            "degree":"Bachelor’s degree in computer engineering",
-            "graduationDate":"2025"
         },
         {
             "schoolName":"University American of professional studies",
@@ -147,7 +142,7 @@
     "contacts":[
         {
             "website":"Call : 212-617-2601",
-            "link":"tel:212617260124"
+            "link":"tel:+212617260124"
         },
         {
             "website":"linkedin",

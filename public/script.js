@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Loaded");
 
     function initializeMenu() {
         let menuBtn = document.getElementById("menu-btn");
@@ -50,4 +49,31 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.addEventListener("htmx:afterSwap", function(event) {
         initializeMenu();
     });
+
+    // email to
+    document.getElementById('email-button').addEventListener('click', function() {
+        document.getElementById("email-button")
+    
+        const email = 'saidaitdrissofficial@gmail.com';
+        const subject = 'Hello there';
+        const body = 'I would like to hire you ...';
+        const mailtoLink = `mailto:${email}?
+    
+        subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.location.href = mailtoLink;
+    })
+
+    // ask for resume
+        document.getElementById('resume-button').addEventListener('click', function() {
+            document.getElementById("resume-button")
+        
+            const email = 'saidaitdrissofficial@gmail.com';
+            const subject = 'Hello there';
+            const body = 'I would like see your resume ...';
+            const mailtoLink = `mailto:${email}?
+        
+            subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        })
 });
+

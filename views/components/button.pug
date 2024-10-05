@@ -1,4 +1,4 @@
-mixin button(buttonLabel, buttonClass, buttonType)
+mixin button(buttonLabel, buttonClass, buttonType, buttonId)
   div(class="button-container")
-    button(class=buttonClass type=buttonType) #{buttonLabel}
+    button(class=buttonClass type=buttonType id=buttonId) #{buttonLabel}
     div(class="rectangle")
