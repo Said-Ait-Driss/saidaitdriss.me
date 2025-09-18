@@ -1,3 +1,11 @@
+mixin googleAnalytics(id)
+  script(async src=`https://www.googletagmanager.com/gtag/js?id=${id}`)
+  script.
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '#{id}');
+
 doctype html
 html
     head 
@@ -5,6 +13,10 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="/stars.css")
         link(rel="stylesheet", href="/styles.css")
+
+        //- Include Google Analytics
+        +googleAnalytics('G-D0WX0TE3L7')
+
         script(src="/script.js")
         script(src="https://unpkg.com/htmx.org@2.0.2")
     body 
