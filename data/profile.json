@@ -2,13 +2,17 @@
     "brief":{
         "username":"s.aitdriss",
         "firstName":"Said",
-        "profession":"Software Developer",
+        "profession":"Software Engineer",
         "country":"Morocco",
         "tel":"+212617260124"
     },
     "about":"A highly skilled Full Stack Developer with a Master’s degree in Computer Science and over 3 years of experience in building robust software solutions. Proficient in a diverse range of technologies, including JavaScript frameworks such as React, React Native, Vue.js, Node.js, Express.js, and Nest.js, as well as Java-based technologies like Spring and Spring Boot.\n Coding since the age of 19, I have developed a strong foundation in both front-end and back-end development, enabling me to create seamless and efficient applications.\n My passion for technology drives me to continuously learn and adapt to new tools and frameworks, ensuring that I stay at the forefront of industry trends.",
     "education":[
-
+        {
+            "schoolName":"Sup Mti Rabat",
+            "degree":"Bachelor’s degree in Systems Engineering",
+            "graduationDate":"2025"
+        },
         {
             "schoolName":"University American of professional studies",
             "degree":"Master degree in Computer Science",
@@ -30,10 +34,34 @@
     ],
     "experiences":[
         {
+            "companyName":"Soft Bridge Solutions",
+            "jobTitle":"Senior Mern Stack Developer",
+            "startDate":"2025-02-01",
+            "endDate":"2025-06-23",
+            "description":"Architect and Build entire business part of an existing social media platform like tiktok",
+            "technologies":["Nest js","MongoDB","Node js","React js", "Next js","Ntd","Google api's","2FA"],
+            "achievements":[
+                "Enhance security of existing apps",
+                "Architect business logic and build the app of an existing social media platform"
+            ]
+        },
+        {
+            "companyName":"Path Bloom",
+            "jobTitle":"Full Stack Developer",
+            "startDate":"2024-12-01",
+            "endDate":"2024-01-29",
+            "description":"Developed a robust softwares using Node js, Nest js, React js, Vue js, MongoDB",
+            "technologies":["Nest js","MongoDB","Node js","React js", "Vue js","MongoDB"],
+            "achievements":[
+                "Developed a scalable and efficient software systems for clients",
+                "Follow's and Architect clients needs"
+            ]
+        },
+        {
             "companyName":"Shepherd Labs",
             "jobTitle":"Full Stack Developer",
             "startDate":"2022-04-18",
-            "endDate":"present",
+            "endDate":"2024-11-08",
             "description":"Developed a robust softwares using Node js, Nest js, React js, Vue js, MongoDB, ElastiSearch",
             "technologies":["Nest js","MongoDB","Node js","React js", "Vue js","ElastiSearch","MongoDB"],
             "achievements":[
@@ -83,6 +111,17 @@
         }
     ],
     "projects":[
+        {
+            "projectName":"FitPro (fitness project)",
+            "description":"A web-based application designed to efficiently . Built using Next js 15 as the backend framework and React js 19 as the frontend, Along with lucide and tailwind css",
+            "features":[
+                "User Authentication",
+                "Pricing Systems"
+            ],
+            "technologies":["React ","Next 15","lucide, tailwind, HTML, CSS, JavaScript"],
+            "mainImage":"https://raw.githubusercontent.com/Said-Ait-Driss/fitPro/refs/heads/main/Selection_020.png",
+            "images":["",""]
+        },
         {
             "projectName":"Vehicle Management System (VMS)",
             "description":"A web-based application designed to efficiently manage and track the fleet of vehicles, including cars and motorcycles, for a public company. Built using Laravel as the backend framework and MySQL as the database management system, the application provides a robust and scalable solution for managing vehicle-related operations",
