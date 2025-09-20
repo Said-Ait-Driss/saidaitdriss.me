@@ -111,7 +111,22 @@
         }
     ],
     "projects":[
-                {
+        {
+            "projectName":"Amazon Clone app",
+            "description":"Fully functional Amazon clone app using React Native, Expo, Redux Toolkit, Persist and Supabase.",
+            "features":[
+                "Search and filter products.",
+                "Add products to the cart.",
+                "Update product quantities.",
+                "Easily list and manage products.",
+                "Provide product details such as pricing, description, and quantity.",
+                "Ship products based on the buyer’s shipping address."
+            ],
+            "technologies":["React Native","Expo","Redux","Redux Toolkit","Supabase"],
+            "mainImage":"https://raw.githubusercontent.com/Said-Ait-Driss/amazon-clone/refs/heads/main/Selection_019.png",
+            "images":["",""]
+        },
+        {
             "projectName":"E-learning App",
             "description":"Learning platform using Spring boot & next js, Designed to meet tutors with students in certain fields",
             "features":[
