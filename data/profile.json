@@ -111,6 +111,31 @@
         }
     ],
     "projects":[
+                {
+            "projectName":"E-learning App",
+            "description":"Learning platform using Spring boot & next js, Designed to meet tutors with students in certain fields",
+            "features":[
+                "Roles Based System (Tutor,Student,Admin)",
+                "Appointement: tutors add availabilities appointement",
+                "Booking: Students booking tutors"
+            ],
+            "technologies":["Java","Spring Boot","Spring security ","Postgresql","Lombok", "Websocket", "HTML", "CSS", "Next js","Next Auth","Tailwind css","Redux","Redux toolkit","Docker"],
+            "mainImage":"https://raw.githubusercontent.com/Said-Ait-Driss/moallimi/refs/heads/main/frontend/public/product-cover-131.png",
+            "images":["",""]
+        },
+        {
+            "projectName":"Nfts market (NFT marketplace)",
+            "description":"Decentralized NFT marketplace built using Hardhat and Next.js. The marketplace allows users to mint, buy, and sell NFTs securely on the ether blockchain.",
+            "features":[
+                "Minting NFTs: Users can mint their own NFTs.",
+                "Buying: Users can list NFTs for sale .",
+                "Selling NFTs: Users can buy NFTs listed by others",
+                "Blockchain Integration: Secure and transparent transactions using Ethereum."
+            ],
+            "technologies":["Solidity","Ethers","React ","Next 15","Node.js", "Hardhat", "HTML", "CSS", "Nft storage","pinata","Web3modal"],
+            "mainImage":"https://raw.githubusercontent.com/Said-Ait-Driss/sidox-nfts-market/refs/heads/main/4634138_6025_2-849947885.jpg",
+            "images":["",""]
+        },
         {
             "projectName":"FitPro (fitness project)",
             "description":"A web-based application designed to efficiently . Built using Next js 15 as the backend framework and React js 19 as the frontend, Along with lucide and tailwind css",
@@ -180,20 +205,20 @@
     ],
     "contacts":[
         {
-            "website":"Call : 212-617-2601",
+            "website":"Call : 212-617-260124",
             "link":"tel:+212617260124"
         },
         {
-            "website":"linkedin",
-            "link":"https://linkedin.com/saidaitdriss"
+            "website":"Linkedin",
+            "link":"https://www.linkedin.com/in/said-ait-driss/"
         },
         {
-            "website":"instagram",
-            "link":"https://instagram.com/saidaitdriss"
+            "website":"Instagram",
+            "link":"https://instagram.com/said_ait_driss"
         },
         {
-            "website":"x",
-            "link":"https://x.com/saidaitdriss"
+            "website":"Github",
+            "link":"https://github.com/Said-Ait-Driss"
         }
     ]
 }
