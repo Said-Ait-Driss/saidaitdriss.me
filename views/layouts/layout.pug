@@ -19,7 +19,17 @@ html
 
         script(src="/script.js")
         script(src="https://unpkg.com/htmx.org@2.0.2")
-    body 
+    body
+        #loader
+            .bar
         include ../partials/header.pug
         include ../components/stars.pug
         block content
+        script.
+            document.body.addEventListener("htmx:beforeRequest", function(evt) {
+                document.querySelector("#loader").style.display = "block";
+            });
+
+            document.body.addEventListener("htmx:afterRequest", function(evt) {
+                document.querySelector("#loader").style.display = "none";
+            });
