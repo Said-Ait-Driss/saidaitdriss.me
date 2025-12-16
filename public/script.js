@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('email-button').addEventListener('click', function() {
         document.getElementById("email-button")
     
-        const email = 'saidaitdrissofficial@gmail.com';
+        const email = 'saidaitdriss@outlook.com';
         const subject = 'Hello there';
         const body = 'I would like to hire you ...';
         const mailtoLink = `mailto:${email}?
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('resume-button').addEventListener('click', function() {
             document.getElementById("resume-button")
         
-            const email = 'saidaitdrissofficial@gmail.com';
+            const email = 'saidaitdriss@outlook.com';
             const subject = 'Hello there';
             const body = 'I would like see your resume ...';
             const mailtoLink = `mailto:${email}?
